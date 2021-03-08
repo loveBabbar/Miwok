@@ -26,7 +26,7 @@ public class wordAdapter extends ArrayAdapter<word> {
         super(context, 0, words);
         colorid=color;
     }// passing zero for layout resource id ,  because we are inflating view ourselves in the getview method
-
+		//the return type of getView method is View.
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
